@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto Mono';
+    font-size: 5rem;
+    line-height: 15.8rem;
+    letter-spacing: 0.025em;
+    text-transform: uppercase;
+    color: #FFF;
+}
+
+.login_msg {
+    font-family: Roboto Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 5rem;
+    line-height: 158px;
+    letter-spacing: 0.03em;
+    text-shadow: 4px 6px 5px rgba(0, 0, 0, 0.15);
+    color: #7CD8F8;
+    animation: loginAnimation 1s infinite linear;
+}
+
+.danger {
+    width: 50%;
+    padding: 10px 0;
+    background-color: #ffc107;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: 'Roboto Mono';
+    color: #FFF;
+    font-size: 1.5rem;
+}
+
+@keyframes loginAnimation {
+    from {
+        color: #5ed0f7;
+    }
+     
+    to {
+        color: #41A8CC;
+    }
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.body-panel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #FFF;
+}
+
+.body-panel h2 {
+    color: rgb(148, 148, 148);
+}
+
+main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    width: 62vw;
+}
+
+body {
+    background: linear-gradient(90deg, #7CD8F8 0%, #41A8CC 100%);
+    overflow-x: hidden;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    height: 50%;
+    border: 6px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 28px;
+    max-width: 600px;
+    min-height: 500px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 40%;
+    max-height: 200px;
+}
+
+.form-signin {
+    height: 25%;
+}
+
+.username-field, .email-field, .password-field {
+    font-family: 'Roboto Mono';
+    color: #EBEBEB;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    text-decoration: underline #EBEBEB;
+}
+
+.submit-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #FFF;
+    border-radius: 7px;
+    width: 10rem;
+    height: 10rem;
+    padding: 1rem;
+    position: absolute;
+    margin-left: 58%;
+    filter: drop-shadow(11px 13px 3px rgba(0, 0, 0, 0.15));
+}
+
+.submit-button input {
+    border: none;
+    outline: none;
+    background: transparent;
+    font-family: 'Roboto Mono';
+    color: #859CF0;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    letter-spacing: 0.01em;
+    text-align: center;
+    cursor: pointer;
+}
+
+.icon-submit {
+    font-size: 2rem;
+    color: #859CF0;
+}
+
+.area-illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 34vw;
+    background: rgba(0, 0, 0, 0.2);
+    height: 100vh;
+    position: fixed;
+    right: 0;
+}
+
+.illustration-content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    height: 50vh;
+}
+
+.illustration-content .text-area {
+    width: 80%;
+}
+
+.illustration-content .text-area p {
+    font-family: 'Roboto Mono';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 2rem;
+    line-height: 40px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.signup-illustration {
+    width: 100%;
+}
+
+/* Placeholders */
+::-webkit-input-placeholder { 
+    color: #EBEBEB;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 66px;
+    letter-spacing: 0.01em; 
+}
+
+input:-moz-placeholder {
+    color: #EBEBEB;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 66px;
+    letter-spacing: 0.01em;
+}
+
+textarea:-moz-placeholder {
+    color: #EBEBEB;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 2rem;
+    line-height: 66px;
+    letter-spacing: 0.01em;
+}
+
+footer {
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .area-illustration {
+        display: none;
+    }
+
+    main {
+        width: 100vw;
+    }
+
+    .form-container {
+        height: 60%;
+    }
+
+    .submit-button {
+        margin-top: 22rem;
+        margin-left: 0;
+        width: 9rem;
+        height: 9rem;
+    }
+
+    .submit-signin {
+        margin-top: 15rem;
+    }
+
+    .submit-button input {
+        font-size: 1.5rem;
+    }
+}

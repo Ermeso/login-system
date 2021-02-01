@@ -1,0 +1,37 @@
+<main>
+    <header>
+        <div>
+            <h1>sign in</h1>
+        </div>
+    </header>
+
+    {{#each erros}}
+        <div class="danger">
+            <h2>{{texto}}</h2>
+        </div>
+    {{/each}}
+
+    <div class="form-container">
+        <form action="/signin" method="POST" class="form-signin">
+            <input type="text" name="username" class="username-field" placeholder="username" required>
+            <input type="password" name="password" class="password-field" placeholder="password" required>
+            <div class="submit-button submit-signin">
+                <input type="submit" value="Sign IN">
+                <i class="fas fa-arrow-circle-right icon-submit"></i>
+            </div>
+        </form>
+    </div>
+
+    <footer>
+        <h2>Not have an account yet? <a href="/signup">signup</a></h2>    
+    </footer>
+</main>
+
+<div class="area-illustration">
+    <div class="illustration-content">
+        <img src="img/sign_in.svg" alt="security_illustration" class="signup-illustration">
+        <div class="text-area">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+    </div>
+</div>
