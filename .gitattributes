@@ -1,4 +1,4 @@
 * text=auto
-* .js linguist-language=JavaScript
-* .css linguist-detectable=false
-* .html linguist-detectable=false
+*.js linguist-language=JavaScript
+*.css linguist-detectable=false
+*.handlebars linguist-detectable=false
